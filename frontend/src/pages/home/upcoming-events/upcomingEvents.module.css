@@ -1,0 +1,87 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: var(--max-width);
+  flex-direction: column;
+}
+
+.mlhBanner {
+  position: absolute;
+  top: -50px;
+  width: 130px;
+  left: 50;
+  z-index: 3;
+}
+
+.heading {
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: end;
+  gap: 1rem;
+}
+
+.upComingEvent {
+  position: relative;
+  max-width: var(--max-width);
+}
+
+/* .upComingEvent::after
+{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: rgb(240, 91, 91);
+  border-radius: 50%;
+  position: absolute;
+  top: -10;
+  right: -10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.loading,
+.error,
+.noEvents {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.eventWrapper {
+  position: relative;
+}
+
+.countdown {
+  position: absolute;
+  bottom: 30;
+  text-align: center;
+  left: 30;
+  color: red;
+  padding: 10px;
+  font-size: 2rem;
+  margin: 0;
+  background-color: white;
+  width: 280px;
+}

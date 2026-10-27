@@ -1,0 +1,22 @@
+export const roles = [
+    "Finance",
+    "Sponsor Liasons",
+    "Cyber Security",
+    "Competitive Programming",
+    "Robotics",
+    "Gamedev - Code Socials",
+    "Facilities",
+    "Logistics",
+    "Catering",
+    "Techies",
+    "Web development",
+    "Social Media",
+    "Discord setup",
+    "Graphic Design",
+    "Media production",
+    "Welfare",
+    "President",
+    "General Committee",
+    "Head of Media",
+    "Secretary"
+  ];

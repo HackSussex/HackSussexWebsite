@@ -1,0 +1,583 @@
+
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.description
+{
+  margin-bottom: 0px;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Storage */
+.storageSection {
+  width: 500px;
+  background-color: var(--container-colour);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+}
+
+.storageDiscordSection
+{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+.storageGalleryContainer
+{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  height: fit-content;
+}
+
+.storageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.storageBar {
+  width: 100%;
+  height: 18px;
+  background: #e4e4e4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.storageFill {
+  height: 100%;
+  background: var(--accent-colour);
+  transition: width 0.4s ease;
+}
+
+/* Gallery */
+.gallery {
+  
+  width: 100%;
+  outline: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  background-color: var(--container-colour);
+  padding: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.galleryPreview {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-container-colour);
+  background-size: cover;
+  background-position: center;
+  position: absolute;;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transform-origin: center;
+}
+
+/* Discord card */
+.discordCard {
+  background: var(--container-colour);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  outline: 1px solid var(--container-border-colour);
+  flex: 1;
+  cursor: pointer;
+  flex: 1;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  padding: 1.5rem;
+  background: var(--container-colour);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  text-align: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 25px;
+  cursor: pointer;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.card h2
+{
+  text-align: start;
+  height: fit-content;
+  font-size: 1.2rem;
+}
+
+.card p
+{
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.card svg
+{
+  position: relative;
+  color: var(--accent-colour);
+  min-width:30px;
+  min-height: 30px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.upcoming {
+}
+
+.eventList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.eventItem {
+  padding: 1rem;
+  background-color: var(--container-colour);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  height: 100%;
+  cursor: pointer;
+}
+
+.eventInfo
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventInfo h3 {
+  margin: 0;
+}
+
+.discordStat
+{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.greenDot, .greyDot
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(4, 195, 4);
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.galleryOverlay
+{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: var(--container-colour);
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+}
+
+.galleryOverlay h1
+{
+  font-size: 3rem;
+  font-style: italic;
+}
+
+
+.dashBoardHeader
+{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.dashBoardHeader .button-container
+{
+  height: fit-content;
+}
+
+.dashBoardHeader .button-container button
+{
+  height: fit-content;
+}
+
+.galleryOverlayAlbums {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 0.5rem;
+  margin-top: 15px;
+  flex: 1;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+
+
+.galleryOverlayAlbums .album
+{
+  background-color: var(--container-colour);
+  border: 1px solid var(--container-border-colour);
+  width: fit-content;
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius);
+  margin: 0;
+  height: fit-content;
+}
+
+.album p
+{
+  margin: 0;
+}
+
+.gallery .bottomRightImg
+{
+  position: absolute;
+  color: var(--accent-colour);
+  right: 15px;
+  bottom: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.analyticsChart
+{
+   width: 100%;
+   height: fit-content;
+   background: var(--container-colour);
+   border-radius: var(--border-radius);
+   padding: 1rem;
+   border: 1px solid var(--container-border-colour);
+   margin-top: 1rem;
+}
+
+.socials
+{
+  background-color: var(--container-colour);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.socials a
+{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.socials a svg
+{
+  height: 25px;
+}
+
+.socials a span
+{
+  color: var(--text-colour);
+  font-size: 1rem;
+}
+
+.eventSocialContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.eventInformation
+{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.eventInformation .eventLeft
+{
+  height: fit-content;
+  margin-top: 10px;
+}
+
+.eventInformation .eventRight
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.eventRight p
+{
+  margin-top: 0;
+}
+
+.eventLeft a
+{
+  word-break: break-all;
+}
+
+.eventInformation .eventLeft > *
+{
+  width: fit-content;
+}
+
+.eventLogo
+{
+  width: 200px;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-container-colour);
+  border: 1px solid var(--container-border-colour);
+}
+
+.eventDescription
+{
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+.analyticsTop
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.analyticsTop h2
+{
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.analyticsTop button
+{
+  height: fit-content;
+}
+
+.album
+{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.album svg
+{
+  color: var(--accent-colour);
+}
+
+.discordFeedbackContainer
+{
+  display: flex;
+  gap: 1rem;
+}
+
+.feedbackContainer
+{
+  background-color: var(--container-colour);
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  aspect-ratio: 1;   /* width = height */
+  display: flex;
+  width: 170px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.circularProgress {
+  width: 100%;
+  height: 100%;
+}
+
+.progressCircle {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  fill: none;
+  stroke: var(--text-colour);
+  stroke-width: 1;
+  opacity: 0.2;
+}
+
+.fg {
+  fill: none;
+  stroke: var(--accent-colour);
+  stroke-width: 1;
+  stroke-linecap: square;
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.percentage {
+  font-size: 0.34rem;
+  fill: var(--text-colour);
+  dominant-baseline: middle;
+}
+
+.label
+{
+  font-size: 0.2rem;
+  fill: var(--text-colour);
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1180px) {
+  .cards{
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (max-width: 1080px) {
+  .buttonContainer
+  {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .dashBoardHeader
+  {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 940px) {
+  .storageGalleryContainer
+  {
+    flex-direction: column;
+  }
+
+  .storageSection
+  {
+    width: 100%;
+  }
+
+  .gallery
+  {
+    height: 500px;
+  }
+
+  .eventSocialContainer
+  {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 840px) {
+  .analyticsChart
+  {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .dashBoardHeader
+  {
+    flex-direction: column;
+  }
+
+  .buttonContainer
+  {
+    flex-direction: row;
+  }
+
+  .eventInformation
+  {
+    flex-direction: column;
+  }
+
+  .eventRight
+  {
+    align-items: flex-start !important;
+  }
+
+  .eventLogo
+  {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: left;
+  }
+}
+
+@media (max-width: 500px) {
+  .discordFeedbackContainer
+  {
+    flex-direction: column;
+  }
+
+  .feedbackContainer
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .cards{
+    display: flex;
+    flex-direction: column;
+  }
+  .galleryOverlay h3{
+    display: none;
+}
+}

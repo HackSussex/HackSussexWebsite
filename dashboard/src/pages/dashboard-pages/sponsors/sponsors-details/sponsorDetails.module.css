@@ -1,0 +1,17 @@
+
+.sponsorLogo
+{
+    background-color: var(--container-colour);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--container-border-colour);
+    margin-top: 20px;
+    height: 150px;
+}
+
+.bottomButtons
+{
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,153 @@
+:root {
+  --white: #ffffff;
+  --text-colour: #ffffff;
+  --secondary-text-colour: #ffffff;
+  --background-colour: #1c252d;
+  --accent-colour: #04bcff;
+  --footer-background: #ffffff;
+  --container-colour: #fefefe;
+  --border-colour: #ffffff58;
+  --max-width: 1200px;
+  --border-radius: 10px;
+  --lime: #8bda94;
+  --teal: #5dcad1;
+  --blue: #3498db;
+}
+
+/* [data-theme="light"] {
+    --background-colour: #ffffff;
+    --text-colour: #343434;
+} */
+
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  color: var(--text-colour);
+}
+
+p,
+a,
+span,
+label {
+  color: var(--text-colour);
+}
+
+html {
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  max-width: 100dvw;
+  overflow-x: hidden;
+  background-color: var(--background-colour);
+}
+
+body {
+  margin: 0;
+  /* background-image: url("/src/assets/backgrounds/paper\ texture.png");
+    background-size: 200px; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page-content {
+  position: relative;
+  padding-top: 30px;
+  width: 100%;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  background-color: var(--background-colour);
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--background-colour);
+}
+
+.navbar,
+.page-content,
+footer {
+  position: relative;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background-color: white;
+  color: black;
+  padding: 0.7rem 1.25rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  white-space: nowrap;
+  width: fit-content;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: var(--text-colour);
+  outline: 2px solid var(--border-colour);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+input,
+textarea,
+select {
+  background-color: transparent;
+  border: none;
+  outline: 2px solid var(--border-colour);
+  border-radius: var(--border-radius);
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding: 15px 15px;
+}
+
+@media (max-width: 1370px) {
+  .page-content {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding: 0px 15px;
+  }
+}

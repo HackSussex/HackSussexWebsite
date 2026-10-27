@@ -1,0 +1,336 @@
+.eventsPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.headerText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.newEvent {
+  border-color: var(--accent-colour) !important;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.eventsSection {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.eventsSection:last-child
+{
+    margin-bottom: 0;
+}
+
+.pastUpcomingButtons
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.pastUpcomingButtons button
+{
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-container-colour);
+    color: var(--text-colour);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    flex: 1;
+}
+
+.pastUpcomingButtons :global(.active) {
+    background-color: var(--accent-colour) !important;
+    font-weight: bold;
+}
+
+.emptyMessage {
+  opacity: 0.7;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.eventsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.eventCard {
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  background-color: var(--container-colour);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 200px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.eventTop
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.eventLogo
+{
+    height: 50px;
+    object-fit: cover;
+    background-color: var(--secondary-container-colour);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--container-border-colour);
+}
+
+.eventTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.eventDescription
+{
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.eventDate,
+.eventLocation,
+.eventDescription {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-colour);
+}
+
+.eventLocation
+{
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.ticketLink
+{
+    margin: 0;
+    margin-top: 10px;
+}
+
+.eventButtons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: auto;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.logoContainer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1rem;
+    gap: 1rem;
+    overflow-x: auto;
+}
+
+.sponsorLogo
+{
+    height: 50px;
+    min-width: 50px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: var(--secondary-container-colour);
+    border: 1px solid var(--container-border-colour);
+    border-radius: var(--border-radius);
+    /* filter: brightness(0) invert(1); */
+}   
+
+[data-theme="light"] .sponsorLogo, [data-theme="light"] .sponsorItem img 
+{
+    /* filter: brightness(0) !important; */
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.formButtons
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsorGrid {
+  display: flex;
+  overflow-x: scroll;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+.sponsorItem {
+  height: 130px;  
+  background-color: var(--secondary-container-colour);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.sponsorItem img {
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  /* filter: brightness(0) invert(1); */
+}
+
+.sponsorItem:hover {
+  border-color: var(--accent-colour);
+}
+
+.selectedSponsor {
+  border-color: var(--accent-colour);
+  border-width: 3px;
+}
+
+.descriptionLogoHolder
+{
+    display: flex;
+    gap: 20px;
+}
+
+.descriptionLogoHolder textarea
+{
+    flex: 1;
+}
+
+/* Logo upload container */
+.logoUpload {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoUpload label {
+  font-weight: 500;
+}
+
+.logoUpload input[type="file"] {
+  padding: 0.3rem;
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Preview image */
+.logoPreview, .logoPlaceholder{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  padding: 0.25rem;
+  background-color: var(--secondary-container-colour);
+  margin-bottom: 0;
+}
+
+.logoPlaceholder
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 660px) {
+  .descriptionLogoHolder
+  {
+    flex-direction: column;
+  }
+
+  .logoPlaceholder
+  {
+    width: fit-content;
+    align-self: center;
+    flex: 1;
+  }
+
+  .descriptionLogoHolder textarea
+  {
+    min-height: 200px;
+  }
+
+  .logoUpload label
+  {
+    width: 100%;
+    display: flex;
+  }
+
+  .logoUpload label img
+  {
+    width: 100%;
+  }
+
+  .logoUpload
+  {
+    align-items: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .formButtons
+  {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+
+  .formButtons button
+  {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 520px) {
+  .sponsorLogo
+  {
+    height: 80px;
+    min-width: max-content;
+  }
+
+  .logoContainer
+  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+}

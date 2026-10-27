@@ -1,0 +1,239 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.headerText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.formButtons
+{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.formGroup
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+
+.stagedItem,
+.uploadedItemWrapper {
+  flex: 0 0 auto; /* prevent shrinking, allow horizontal scroll */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stagedScroll p, .uploadedScroll p
+{
+    margin: 0;
+}
+
+.stagedItem img,
+.uploadedItem {
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  min-width: 100px;
+}
+
+.stagedItem
+{
+    border-radius: var(--border-radius);
+    border: 1px solid var(--container-border-colour);
+    background-color: var(--container-colour);
+    position: relative;
+}
+
+.stagedItem button
+{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid var(--container-border-colour);
+}
+
+.stagedItem p {
+  display: none;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  text-align: start;
+}
+
+.previewContainer {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.previewItem {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  position: relative;
+  min-width: 100px;
+}
+
+.previewItem button
+{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.previewItem img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.previewImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.previewFilename {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.stagedScroll,
+.uploadedScroll {
+  display: flex;
+  gap: 16px; /* spacing between images */
+  margin-top: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.uploadedItemWrapper {
+    height: 150px;
+    width: auto;
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-container-colour);
+    border: 1px solid var(--container-border-colour);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    min-width: 100px;
+}
+
+.uploadedItemWrapper button
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--container-border-colour);
+}
+
+.uploadedItemWrapper img
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.uploadedItem
+{
+    border: 1px solid var(--container-border-colour);
+}
+
+.filterContainer
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterContainer select
+{
+  width: fit-content;
+  max-width: 100px;
+}
+
+.pageControls
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 490px) {
+  .filterContainer
+  {
+    flex-direction: column;
+  }
+
+  .filterContainer select
+  {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .uploadedItemWrapper
+  {
+    width: 100%;
+  }
+
+  .stagedItem
+  {
+    width: 100%;
+  }
+
+  .pageControls
+  {
+    justify-content: center;
+  }
+}
+
+.notAvailable
+{
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--container-colour);
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+}
+
+.deleting
+{
+  border-width: 3px;
+  border-color: var(--error);
+}
+
+.creating
+{
+    border-width: 3px;
+  border-color: var(--accent-colour);
+}

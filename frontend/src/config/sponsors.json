@@ -1,0 +1,123 @@
+[
+  {
+    "id": "sponsor_ei61ruq19o",
+    "name": "Electric Square",
+    "website": "https://electricsquare.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_qz0kk69j.png"
+  },
+  {
+    "id": "sponsor_uiob953023r",
+    "name": "University of Sussex Informatics",
+    "website": "https://www.sussex.ac.uk/schools/engineering-and-informatics/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_nr5eu235.png"
+  },
+  {
+    "id": "sponsor_t4vn9iyr63f",
+    "name": "EDF",
+    "website": "https://www.edfenergy.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_hain1cvb.png"
+  },
+  {
+    "name": "BCS",
+    "website": "https://www.bcs.org/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_cd4jyih9.png",
+    "id": "sponsor_z5baqddtax",
+    "section": null
+  },
+  {
+    "id": "sponsor_tr3w8xyx5b",
+    "name": "Cogapp",
+    "website": "https://www.cogapp.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_ehrwr21l.png"
+  },
+  {
+    "id": "sponsor_36usqgnoasp",
+    "name": "Github",
+    "website": "https://github.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_4zkkp79i.png"
+  },
+  {
+    "id": "sponsor_umlbpo97xof",
+    "name": "Hastings Direct",
+    "website": "https://www.hastingsdirect.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_0k0wiz96.png"
+  },
+  {
+    "id": "sponsor_wqh5udpprz",
+    "name": "MTL",
+    "website": "https://www.sussex.ac.uk/mtl/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_f08b4msu.png"
+  },
+  {
+    "id": "sponsor_4u46xc97ku",
+    "name": "Paxton",
+    "website": "https://www.paxton-access.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_hm3khvai.png"
+  },
+  {
+    "id": "sponsor_d9u1s3xr97o",
+    "name": "Rittman Mead",
+    "website": "https://rittmanmead.com/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_tbyz3kqd.png"
+  },
+  {
+    "id": "sponsor_7zc0feqft4",
+    "name": "Teach First",
+    "website": "https://www.teachfirst.org.uk/",
+    "logoUrl": "https://raw.githubusercontent.com/HackSussexP/HackSussexWebsite/main/public/config_images/sponsors/sponsors_2me79h9g.png"
+  },
+  {
+    "name": "Hackathons UK",
+    "website": "https://www.hackathons.org.uk/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/77564a86-863d-4bda-847d-f751794cefb8.png",
+    "id": "c838a7cc-ae0c-4a89-9893-0fceadc1ac03"
+  },
+  {
+    "name": "MLH",
+    "website": "https://mlh.io/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/2f260102-50a1-49a9-807d-3e103451f723.png",
+    "id": "d2e9f775-4223-448d-baf6-63d0d2841cf6"
+  },
+  {
+    "name": "Recurse ML",
+    "website": "https://www.recurse.ml/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/7e07dfa6-5cfc-4580-8439-771fa45710d5.png",
+    "id": "c8f9744c-1445-4fe0-ac7d-a90729d417e2"
+  },
+  {
+    "name": "Roto VR",
+    "website": "https://www.rotovr.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/592cdf33-316f-4613-bdf9-61ff009be98c.png",
+    "id": "413917d2-a40c-4655-ba98-19d52832a875"
+  },
+  {
+    "name": "Unity",
+    "website": "https://unity.com",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/9d306fc4-e2d9-4153-b95c-8c6ca67c4264.png",
+    "id": "9b22f75e-1872-4ff4-9ce7-d84c3f50e4b0"
+  },
+  {
+    "name": "London Gatwick Airport",
+    "website": "https://www.gatwickairport.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/43801b09-8ec9-4e18-aa89-a59b73b2cb71.png",
+    "id": "ddd24269-802e-4320-bfbc-eec80805c3a5"
+  },
+  {
+    "name": "Sussex AI",
+    "website": "https://www.sussex.ac.uk/research/centres/ai-research-group/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/aa8f7198-81d8-4e37-b9fc-a6a9380dae97.png",
+    "id": "049eef45-84f1-4dbe-90c2-7bbf5676b78d"
+  },
+  {
+    "name": "Switchplane",
+    "website": "https://www.switchplane.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/33ff8dd1-d1a6-4e83-a3d8-0565bc9f31b7.png",
+    "id": "c1354f91-c24a-470e-9c74-2a4cd1cca292"
+  },
+  {
+    "name": "CASM Technology",
+    "website": "https://www.casmtechnology.com/",
+    "logoUrl": "https://raw.githubusercontent.com/natbates/HackSussexWebsite/main/public/config_images/sponsors/767038ad-e24e-4d56-8c79-9f870e085d91.png",
+    "id": "893a0bed-2064-47ad-b9c3-76319b28303e"
+  }
+]

@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  max-width: var(--max-width);
+  flex-direction: column;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.heading {
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: end;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .topLine {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.videoGrid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,54 @@
+.socialsList {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}
+
+.socialsList a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--container-colour);
+  border-radius: var(--border-radius);
+  height: 55px;
+  width: 55px;
+  color: black !important;
+  overflow: hidden;
+}
+
+.socialsList span {
+  color: black;
+}
+
+.socialsList a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--lime), var(--blue));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.socialsList a:hover::before {
+  opacity: 1;
+}
+
+.socialsList a > * {
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.socialsList a:hover .icon {
+  color: white;
+}

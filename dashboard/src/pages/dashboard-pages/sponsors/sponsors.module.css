@@ -1,0 +1,190 @@
+.sponsorsPage {
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.headerText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.sponsorsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newCard {
+  border-color: var(--accent-colour) !important;
+}
+
+
+.sponsorCard {
+  background-color: var(--container-colour);
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.sponsorCard h3
+{
+    text-align: start;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+.sponsorLogo {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  margin-top: 10px;
+  background-color: var(--secondary-container-colour);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  /* filter: brightness(0) invert(1); */
+}
+
+[data-theme="light"] .sponsorLogo
+{
+    /* filter: brightness(0) !important; */
+}
+
+.noLogo {
+  height: 200px;
+  width: 200px;
+  background-color: var(--secondary-container-colour);
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-colour);
+}
+
+.cardButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logoUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoLabel {
+  cursor: pointer;
+}
+
+.logoPreview {
+  width: 300px;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  height: 150px;
+  padding: 0.6rem;
+  background-color: var(--secondary-container-colour);
+}
+
+.logoPlaceholder {
+  width: 150px;
+  height: 150px;
+  background-color: var(--secondary-container-colour);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--text-colour);
+  font-size: 0.8rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--container-border-colour);
+  padding: 0.25rem;
+}
+
+.formButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.sponsorForm
+{
+    display: flex;
+    gap: 20px;
+}
+
+.sponsorForm .inputs
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .sponsorCard
+  {
+    width: 45%;
+  }
+
+  .sponsorLogo
+  {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+}
+
+@media (max-width: 510px) {
+
+  .sponsorCard
+  {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+    .sponsorForm
+    {
+      flex-direction: column;
+    }
+
+    .sponsorLogo
+    {
+      width: 100%;
+    }
+
+    .logoLabel
+    {
+      width: 100%;
+    }
+
+    .logoPreview
+    {
+      height: 300px;
+      width: 100%;
+      padding: 30px;
+    }
+}

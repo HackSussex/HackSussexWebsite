@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.topLine {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.5rem 0;
+  text-align: center;
+  align-items: center;
+}
+
+.ctaText {
+  max-width: 900px;
+  font-size: 1rem;
+  margin: 0;
+  text-align: start;
+  opacity: 0.8;
+}
+
+.ctaButton {
+  height: fit-content;
+}
+
+@media (max-width: 750px) {
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .ctaButton {
+    align-self: flex-start;
+  }
+}

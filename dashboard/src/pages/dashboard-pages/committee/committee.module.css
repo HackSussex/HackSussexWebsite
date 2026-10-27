@@ -1,0 +1,313 @@
+.membersGrid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.memberCard {
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  background: var(--container-colour);
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  min-width: 453px;
+  overflow: hidden;
+}
+
+.memberCard h2
+{
+    margin-bottom: 8px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.memberCard h3
+{
+    opacity: 0.7;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.newCard {
+  border: 2px solid var(--accent-colour);
+  background-color: var(--accent-colour-light);
+}
+
+.profilePicture {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+}
+
+.profileUpload {
+  background-color: var(--secondary-container-colour);
+  cursor: pointer;
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  margin-top: 0;
+  object-fit: cover;
+  /* height: 306px; */
+  width: 306px;
+}
+
+.profileUpload label img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+.profileUpload label
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.committeeSection
+{
+    margin-bottom: 50px;
+}
+
+.headerText
+{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 1rem;
+}
+
+.headerButtons
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cardButtons
+{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+
+.memberForm
+{
+    display: flex;
+    gap: 20px;
+}
+
+.memberForm .inputs
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.yearCheckboxList {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-y: auto;
+  width: 100%;
+  flex-wrap: wrap;
+  max-height: 100px;
+  height: fit-content;
+}
+
+.yearCheckboxItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid var(--container-border-colour);
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+  max-width: fit-content;
+  user-select: none;
+  background: var(--secondary-container-colour);
+  transition: background 0.2s, border-color 0.2s;
+  height: fit-content;
+}
+
+.customCheckbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background: white;
+  margin-right: 10px;
+}
+
+
+.customCheckbox svg
+{
+  color: black;
+}
+
+.customCheckbox.checked {
+  color: var(--text-colour);
+  border-color: var(--accent-colour);
+}
+
+.yearCheckboxItem:hover {
+  background: var(--accent-colour);
+  color: white;
+}
+
+.yearCheckboxItem:hover .customCheckbox
+{
+  border-color: black;
+}
+
+.yearCheckboxItem input {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+
+.yearGroup {
+  margin-bottom: 2rem;
+}
+
+.yearHeader {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.formButtons
+{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.committeeMember
+{
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 994px) {
+  .memberCard
+  {
+    min-width: 100%;
+  }
+  .cardButtons
+  {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .committeeMember
+  {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .memberForm
+  {
+    flex-direction: column;
+  }
+  .profileUpload
+  {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .cardButtons
+  {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 485px) {
+  .yearCheckboxItem
+  {
+    max-width: none;
+  }
+  .yearCheckboxList
+  {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 483px) {
+
+  .profilePicture
+  {
+    min-width: 80px;
+  }
+}
+
+@media (max-width: 430px) {
+  .memberCard {
+    flex: 1;
+    min-width: 0; /* <- essential */
+    max-width: 100%;
+  }
+
+  .memberCard h2 {
+    min-width: 0; 
+  }
+
+  .membersGrid
+  {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .memberCard h2 {
+    min-width: 0; 
+    max-width: 100%;
+  }
+}

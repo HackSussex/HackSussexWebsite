@@ -1,0 +1,134 @@
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: start;
+  width: 100%;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.topLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.text p {
+  margin-bottom: 0;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: end;
+  gap: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .topLine {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 3rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+  text-align: start;
+  border-radius: var(--border-radius);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  background: rgba(255, 255, 255, 0.023);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card p {
+  flex: 1;
+}
+
+.cardImage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--accent-colour, #fff);
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card svg {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.iconOverlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+.description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

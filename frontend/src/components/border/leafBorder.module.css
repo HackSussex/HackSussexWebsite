@@ -1,0 +1,31 @@
+.container {
+  position: absolute; /* 🔑 important change */
+  top: 0;
+  width: 80px;
+  height: 100%; /* now relative to parent */
+  pointer-events: none;
+  z-index: 10000;
+  transition: opacity 0.5s ease;
+}
+
+.left {
+  left: -10px;
+}
+
+.right {
+  right: -10px;
+}
+
+.leaf {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 1s ease;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    opacity: 0;
+  }
+}
