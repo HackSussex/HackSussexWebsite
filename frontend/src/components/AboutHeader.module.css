@@ -1,0 +1,53 @@
+.logoImage {
+  width: 28vw;
+  height: auto;
+  padding-bottom: 1.3rem;
+}
+
+.largeButton {
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+  text-decoration: none !important;
+}
+
+.largeButton:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+.buttonSpace {
+  margin-right: 9rem;
+}
+
+.largeButton:hover, .largeButton:focus {
+  text-decoration: none !important;
+}
+
+@media (max-width: 768px) {
+  .logoImage {
+    width: 50vw;
+  }
+
+  .largeButton {
+    font-size: 1.2rem;
+    padding: 8px 24px;
+  }
+
+  .buttonSpace {
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logoImage {
+    width: 70vw;
+  }
+
+  .buttonSpace {
+    margin-right: 2rem;
+  }
+}

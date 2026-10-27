@@ -1,0 +1,48 @@
+h5 {
+  color: var(--electric-green);
+}
+
+.icon {
+  color: var(--blue);
+  transition: transform 0.3s;
+  font-size: 2rem;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  color: var(--electric-green);
+}
+
+.emailLink {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1rem;
+  transition: text-decoration 0.3s, color 0.3s;
+}
+
+.emailLink:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.roleText {
+  font-size: 1rem;
+  color: var(--text);
+  font-style: italic;
+}
+
+.titleSpacing {
+  padding-top: 60px;
+  color: black;
+}
+
+.responsiveText {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .responsiveText {
+    font-size: inherit;
+  }
+  
+}

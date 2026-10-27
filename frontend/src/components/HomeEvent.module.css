@@ -1,0 +1,30 @@
+.container {
+  color: var(--text)
+}
+
+.container h2 {
+  color: var(--electric-green);
+}
+
+.img-fluid {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .img-fluid {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsive-text {
+    font-size: 1.25rem; /* or adjust according to your need for large screens */
+  }
+}
+
+@media (max-width: 991px) {
+  .responsive-text {
+    font-size: 1rem; /* or adjust according to your need for small screens */
+  }
+}
